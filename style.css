@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');
+body {
+    background-color: #131316;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+button a {
+    text-decoration: none;
+}
+button a:visited {
+    color: rgb(195, 195, 195);
+}
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+nav button {
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+    height: 45px;
+    width: 175px;
+    background: linear-gradient(to right ,#272727,#131316 );
+    color: rgb(195, 195, 195);
+    border: #272727;
+    border-radius: 10px;
+}
+.link a {
+    color: #fff;
+}
+section a:visited{
+    color: #fff;
+}
+section:nth-child(2n) a:visited {
+    color: #131316;
+}
+
+section {
+    display: grid;
+    place-items: center;
+    align-items: center;
+    min-height: 100vh;
+}
+section:nth-child(2n) {
+    background-color: #fff;
+    color: #131316;
+}
+.text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1080px;
+}
+p {
+    text-align: justify;
+    font-size: 22px;
+}
+.first-content {
+    min-height: 150vh;
+}
+
+.team-name a {
+    text-decoration: none;
+}
+section a button {
+    position: relative;
+    display: inline-block;
+    padding: 12px 36px;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 2px;
+    border-radius: 40px;
+    background: linear-gradient(90deg, #755bea, #ff72c0);
+    transition: 0.25s ease-in;
+}
+section a button:hover {
+    cursor: pointer;
+    background: linear-gradient(90deg, #0162c8, #55e7fc);
+    transform: translateY(-5px) ;
+}
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 0.6s;
+}
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+
+

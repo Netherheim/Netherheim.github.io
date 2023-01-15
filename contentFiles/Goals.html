@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Currently, we have a playable prototype of the game with many core features present:</h2>
+    <ul>
+        <li>
+            Player combat and movement:
+            <ul>
+                <li> The player can be controlled using W, A, S, D keys for movement and the mouse for aiming.</li>
+                <li> The player has various attributes including: health that determines whether the player is alive or
+                    not;
+                    stamina that can be used to either run faster by holding Shift or dash forward by pressing Space;
+                    mana that
+                    allow the player to use magical weapons.</li>
+                <li>
+                    <img src="/Pictures/pic1.png" alt="">
+                    <img src="/Pictures/pic2.png" alt="">
+                    <img src="/Pictures/pic3.png" alt="">
+                </li>
+            </ul>
+        </li>
+        <li>
+            Item system:
+            <ul>
+                <li>Weapons: There are currently 3 weapons in the game: Iron Sword, a short-ranged but devastating
+                    weapon; Wooden Bow, a long-ranged but relatively weak weapon; Sapphire Staff, a magic weapon that
+                    shoots powerful magical orbs but costs mana to use.
+                </li>
+                <li>Consumables: There are two types of consumable potions: Health Potions (red), and Mana Potions
+                    (blue), which recover the respective player’s attribute.
+                </li>
+                <li>Currency: The main currency of the game are gold coins, which are obtained from killing monsters.
+                    These coins can be used to purchase towers.
+                </li>
+                <li>Inventory System: There are four inventory slots for items the player picks up throughout the level.
+                    The player can access each item by pressing the corresponding number key (e.g. “4” key for slot
+                    number 4) or scroll the mouse.
+                </li>
+            </ul>
+        </li>
+        <li>
+            <p><i>In order to achieve our scope, we want to emphasize the enemies’ mechanics and variety. As for
+                    diversity, there are five different types of enemy appearing in the game</i>:</p>
+            <ul>
+                <li>Melee Enemies: This type of enemy moves toward and attacks the player as soon as they are in the
+                    detection zone, their damage and knockback are huge, but the attacking range is limited. They are
+                    usually seen as monsters that appear in hordes, such as zombies, skeletons, cobras, ogres, etc.
+                </li>
+                <li>
+                    Ranged Enemies: This type assaults the player from a further distance by shooting projectiles and
+                    dodging their melee attack, which can also explode upon impact causing damage and knockback force to
+                    the player, poison paddles taking the player’s health for several times, or flames having the same
+                    effect. In return, these enemies do not have much health. Phantoms, wandering souls, and wyverns
+                    belong to this type.
+                </li>
+                <li>
+                    Hybrid Enemies: They are the combination of the previous two, can attack in both ways, but most of
+                    them cannot move and are as vulnerable as the ranged. Slimes and carnivorous plants are major
+                    members of this type.
+                </li>
+                <li>
+                    Invoker Enemies: A class created specifically for the Invoker, which is typically a ranged enemy,
+                    but can frequently summon more creeps to the battlefield. The Invoker usually plays the role of
+                    minibosses and drops out rare items.
+                </li>
+                <li>
+                    Boss Enemies: As for our expectation of a higher difficulty, we created the bosses. Being the
+                    toughest obstacles against the player, they get all essences from the others, have both melee
+                    attacks and ranged blasts. They are also able to summon clones of themselves and have a strong
+                    second phase. Dark assassin is currently our first boss, the others are still in development.
+                </li>
+                <p><i>All of these enemies are located in suitable places of the map, due to their distinguishing roles
+                        and difficulties.</i></p>
+            </ul>
+        </li>
+        <li>
+            Tower system:
+            <ul>
+                <li>
+                    Towers can be purchased and activated at an outpost for 50 gold coins, these outposts are marked
+                    with the symbol for 50 gold coins.
+                    <img src="" alt="">
+
+                </li>
+                <li>
+                    Towers will automatically target and shoot at the closest enemy.
+                </li>
+            </ul>
+        </li>
+        <li>
+            Map:
+            <ul>
+                <li>
+                    The maps we made are similar to games that require the player to move from one level to another
+                    while the difficulty of each one increases. We have them filled with obstacles so that the player
+                    will need to pay attention to the surroundings instead of feeling so safe to dodge around multiple
+                    times.
+                </li>
+                <li>
+                    Currently we have one map that represents a Swamp biome for the player to play in and an
+                    in-developed dungeon for better combat and adventurous experience instead of being hand-held by the
+                    developers.
+                </li>
+                <li>
+                    We as a team will try to accomplish self-made graphics instead of having assets downloaded from
+                    other creators in the future.
+                </li>
+            </ul>
+        </li>
+        <li>
+            UI:
+            <ul>
+                <li>Player attribute bars: These are progress bars that represent the player’s health (red), stamina
+                    (green) and mana (blue)</li>
+
+                <li>Inventory bar: Shows the various item currently present in the player’s inventory, as well as the
+                    currently selected item (the Iron Sword in the image below)
+                </li>
+                <li>
+                    Gold counter: Shows how many gold coins the player currently owns
+                </li>
+
+                <li>
+                    Game Over screen: When the player’ health reaches 0, the Game Over screen appears. To restart the
+                    game, simply press “Restart”
+                </li>
+            </ul>
+
+
+        </li>
+    </ul>
+
+    <h3>However, there are still many problems with the game regarding bugs, inefficiency and limitations, including:
+    </h3>
+    <ul>
+        <li>
+            Inventory system randomly spawning new item when pick up an item.
+
+        </li>
+        <li>
+            The player sometimes clip through the environment due to problems with collision detection.
+        </li>
+        <li>
+            There is no transition between levels.
+        </li>
+        <li>
+            Lack of consistency when it comes to enemy design (sprite resolution, inheritance structure and coding
+            schemes).
+        </li>
+        <li>
+            Lack of audio design.
+        </li>
+        <li>
+            Limited UI functions.
+        </li>
+    </ul>
+    <h3>In the future, we would like to amend these major issues with the following measures:
+    </h3>
+    <ul>
+        <li> Rewrite and restructure the source code for the inventory system, collision detection and enemy system.
+        </li>
+        <li>
+            Create more original assets like sprites, sounds and music.
+        </li>
+        <li>Add more UI features like a home menu, setting menu and game-pause menu.
+        </li>
+    </ul>
+    <p><i>Overall, the current prototype closely matches our original creative vision, with many core elements
+            developed. The game offers a certain amount of entertainment value and introduces new ideas to the
+            rouge-like genre. However, our game still has many drawbacks that prevents it from being a complete product.
+            Hopefully with more time and effort we can bring Netherheim into a finished state.
+        </i></p>
+</body>
+
+</html>
