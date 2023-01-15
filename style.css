@@ -29,7 +29,7 @@ nav button {
     border: #272727;
     border-radius: 10px;
 }
-.link a {
+button a:visited, .link a {
     color: #fff;
 }
 section a:visited{
