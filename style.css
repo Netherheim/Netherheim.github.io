@@ -9,7 +9,7 @@ body {
 button a {
     text-decoration: none;
 }
-button a:visited {
+button a:visited, button a:link {
     color: rgb(195, 195, 195);
 }
 nav {
@@ -29,10 +29,13 @@ nav button {
     border: #272727;
     border-radius: 10px;
 }
-button a:visited, .link a {
+ .link a {
     color: #fff;
 }
 section a:visited{
+    color: #fff;
+}
+section a:link {
     color: #fff;
 }
 section:nth-child(2n) a:visited {
@@ -45,7 +48,7 @@ section {
     align-items: center;
     min-height: 100vh;
 }
-section:nth-child(2n) {
+section:nth-child(2n), section:nth-child(2n) a:link {
     background-color: #fff;
     color: #131316;
 }
